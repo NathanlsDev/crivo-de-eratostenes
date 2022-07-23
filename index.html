@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos números primos</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__title">Crivo de Eratóstenes</h1>    
+    </header>
+
+    <article class="article">      
+      <p>
+        O Crivo de Eratóstenes um método que permite obter uma tabela de números primos até um limite escolhido(n). Escrevendo uma lista de números de 2 até n. 2 é o menor número primo logo é retirado da lista todos os seus múltiplos, agora o segundo número da lista (o 3) será um número primo, também serão retirados todos os números da lista que sejam múltiplos deste, agora o terceiro número da lista será um número primo (o 5); O processo elimine da lista todos os múltiplos deste, e vai para o próximo número. Os Passos são repetidos até o número correspondente a raiz de n, arredondada para baixo, exemplo: Quer se saber todos os números primos entre 1 e 30, logo o processo continuará até 30^(1/2) = 5.47 pega se apenas a parte inteira logo obtemos 5.(floor(sqrt(30))) => ⌊√30⌋.
+      </p>      
+    </article>
+
+    <main class="main">
+      <section class="main__container">
+        <div class="main__input">
+          <label for="number">
+            Informe um número limite maior ou igual a <span>2</span>:
+          </label>          
+          <input type="number" name="number" id="input" placeholder="insira um número" input>
+
+          <div class="main__buttons">
+            <button class="button" calc>Calcular</button>
+            <button class="button" reset>Resetar</button>
+          </div>
+        </div>
+
+        <div class="main__output">
+          <h2 class="title" title></h2>
+          <p class="formatted" paragraph></p>          
+        </div>
+      </section>
+
+    </main>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
