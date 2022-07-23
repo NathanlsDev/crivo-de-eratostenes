@@ -12,7 +12,7 @@
   display: none;
 }
 
-remove spinner for Mozilla Firefox browser
+/*remove spinner for Mozilla Firefox browser*/
 input[type=number]{
   -moz-appearance:textfield;  
 }
