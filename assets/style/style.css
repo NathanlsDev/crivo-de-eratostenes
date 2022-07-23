@@ -12,6 +12,11 @@
   display: none;
 }
 
+remove spinner for Mozilla Firefox browser
+input[type=number]{
+  -moz-appearance:textfield;  
+}
+
 body{
   font-family: sans-serif;
   height: 100vh;
